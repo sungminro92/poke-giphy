@@ -1,0 +1,139 @@
+.title {
+    /*font-family: 'Anton', sans-serif;*/
+    /*font-size: 80px;*/
+    margin: 0 auto;
+    text-align: center;
+    width: 600px;
+    height: auto;
+    /*text-align: center;*/
+}
+
+#titleImage {
+    padding: 35px;
+    width: 400px;
+    height: auto;
+}
+
+/*.description {*/
+    /*font-family: 'hevetica', sans-serif;*/
+    /*font-weight: lighter;*/
+    /*font-size: 20px;*/
+    /*text-align: center;*/
+    /*margin-top: -50px;*/
+/*}*/
+
+#pokemonContainer {
+    z-index: -5;
+    margin: 0 auto;
+    width: 90vw;
+    height: 60vw;
+    min-width: 300px;
+    min-height: 200px;
+    max-width: 1200px;
+    max-height: 500px;
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: none;
+    margin-top: -20px;
+    justify-content: space-evenly;
+}
+
+
+#getPokemon {
+    border: none;
+    background-color: hotpink;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+#optionContainer {
+    align-items: center;
+    background-color: royalblue;
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    position: relative;
+    height: 45px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#searchBox {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 3px;
+    display: inline;
+    background-color: white;
+    font-size: 16px;
+    height: 30px;
+    width: 60%;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+
+#searchButton {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 3px;
+    width: 35%;
+    position: relative;
+    height: 30px;
+    display:inline;
+    background-color: yellow;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#resultContainer {
+    padding-top: 20px;
+    width: 100vw;
+    min-width: 480px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.giphyImage {
+    width: 300px;
+    height: auto;
+}
+
+
+.pokemonImage {
+    width: 100px;
+    height: 100px;
+}
+
+.pokemonImage:hover {
+    animation-name: colorChange;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@keyframes colorChange {
+    0%   {background-color: red;}
+    14%  {background-color: orange;}
+    28%  {background-color: yellow;}
+    42% {background-color: green;}
+    56% {background-color: dodgerblue;}
+    70% {background-color: darkblue;}
+    84% {background-color: rebeccapurple;}
+    98% {background-color: hotpink;}
+}

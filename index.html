@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>poke-giphy</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Anton|Roboto" rel="stylesheet">
+</head>
+<body>
+	<div class="title">
+		<img id="titleImage" src="https://i.imgur.com/SzL9rrw.png">
+	</div>
+	<!--<p class="description">Click on your favorite Pokemon to get fun giphys</p>-->
+	<!-- button that loads one of pokemon -->
+	<div id="pokemonContainer"></div>
+
+	<div id="optionContainer">
+		<!--<input type="button" id="getPokemon" value="search random pokemon"></body>-->
+		<input type="text" id="searchBox" name="searchBox" placeholder="Or Search Anything!">
+		<input type="button" id="searchButton" name="searchButton" value="Get Giphyyyyy!" onkeypress="keyPress(event)">
+	</div>
+
+<div id=resultContainer></div>
+</body>
+<script src="main.js"></script>
+</html>
